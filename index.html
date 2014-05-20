@@ -6,6 +6,14 @@
 <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css" />
 <script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+
+<script>
+	$('.collapse').click(function(){
+		$('[data-spy="scroll"]').each(function () {
+  			var $spy = $(this).scrollspy('refresh')
+		});
+	});
+</script>
   <meta charset="utf-8">
   
   <title>Camp Wildcat</title>
@@ -58,7 +66,7 @@
 <!--     <button type="button" class="center btn btn-primary btn-lg">Donate!</button>
      -->  </div>
   
-  <img class="image" src="http://www.campwildcat.org/images/header_bg.jpg" alt="">
+  <img class="center image" src="http://www.campwildcat.org/images/header_bg.jpg" alt="">
 
       
       
@@ -251,7 +259,161 @@ Your donations are tax-deductible since Camp Wildcat is recognized as a tax-exem
     
   <div id="faq" class="section">
   <h2>Frequently Asked Questions</h2>
-    <div><a href="#q1">Who is in Camp Wildcat?</a></div>
+  	
+  	<div class="panel-group" id="accordion">
+  		<div class="panel panel-default">
+    		<div class="panel-heading">
+      			<h4 class="panel-title">
+        			<a data-toggle="collapse" data-parent="#accordion" href="#q1">
+          				Who is in Camp Wildcat?
+        			</a>
+      			</h4>
+    		</div>
+    		<div id="q1" class="panel-collapse collapse">
+      			<div class="panel-body">
+      				  <p>There are more than 100 Camp Wildcat volunteers, mostly undergraduates of the University of Arizona. Camp Wildcat is open to any University of Arizona student and does not discriminate on the basis of age, color, ethnicity, gender, national origin, disability, handicap, race, religion, sexual orientation, socioeconomic background, veteran status or unique individual style.</p>
+				</div>
+			</div>
+			<div class="panel-heading">
+      			<h4 class="panel-title">
+        			<a data-toggle="collapse" data-parent="#accordion" href="#q2">
+          				What does Camp Wildcat do?
+        			</a>
+      			</h4>
+    		</div>
+    		<div id="q2" class="panel-collapse collapse">
+      			<div class="panel-body">
+ 					<p>Camp Wildcat is a group of UA students that runs cost-free activities for Tucson youth. We run three weekend camps each semester for kids. We also conduct several day activities with various groups of kids during the school year. Since all of our activities are free to the kids we work with, we hold multiple fundraisers each year to pay for the camps and day activities that we run. We also have socials to give our volunteers the opportunity to meet other students on campus and develop group cohesiveness.</p>
+				</div>
+			</div>
+			<div class="panel-heading">
+      			<h4 class="panel-title">
+        			<a data-toggle="collapse" data-parent="#accordion" href="#q3">
+          				How can I get involved in Camp Wildcat?
+        			</a>
+      			</h4>
+    		</div>
+    		<div id="q3" class="panel-collapse collapse">
+      			<div class="panel-body">
+   					<p>If you are a UA student, you can be involved in Camp Wildcat. The easiest way to get started is to come to our general club meetings. Check the <a href="http://campwildcat.org/members">CW members page</a> for up-to-date meeting times and locations. During the school year we meet once a week. At our meetings you will learn about all of our upcoming events and you will have a chance to meet other members. Meetings are open to any student, and members pay no dues. You can volunteer with us as much or as little as you like. Learn more by exploring at the <a href="http://campwildcat.org/members">CW members page</a>. If you know you would like to volunteer with us, sign up on our website by clicking on the "Join CW" link that is in the upper left hand corner of the yellow box in the <a href="http://campwildcat.org/members">members page</a>.</p>
+				</div>
+			</div>
+			<div class="panel-heading">
+      			<h4 class="panel-title">
+        			<a data-toggle="collapse" data-parent="#accordion" href="#q4">
+          				What is required to volunteer?
+        			</a>
+      			</h4>
+    		</div>
+    		<div id="q4" class="panel-collapse collapse">
+      			<div class="panel-body">
+  					<p>Before a camp you must apply to the camp on-line and sign-up for an interview with the camp director. The camp director will decide who is able to go on camp. Before you volunteer at any activity working with children you must be fingerprinted with Camp Wildcat to check your criminal background for crimes against children. This is a safeguard to protect the children we work with. Fingerprinting and interviews are not required to attend fundaisers, socials, or other events without kids.</p>
+				</div>
+			</div>
+			<div class="panel-heading">
+      			<h4 class="panel-title">
+        			<a data-toggle="collapse" data-parent="#accordion" href="#q5">
+          				I can´t come to meetings, can I still volunteer?
+        			</a>
+      			</h4>
+    		</div>
+    		<div id="q5" class="panel-collapse collapse">
+      			<div class="panel-body">
+    				<p>YES! Absolutely, we would love to have you volunteer with us! Meeting attendance is not required to volunteer at our fundraisers, or as a counselor at our camps or day activities. Simply check the members page of this web site for the information on the event(s) that you would like to attend, and let the person running the event know that you would like to come. In the case of a camp you will have to fill out an application on-line and meet the camp director for an interview, the application and interview sign-ups are also on-line at our members web page.</p>
+				</div>
+			</div>
+			<div class="panel-heading">
+      			<h4 class="panel-title">
+        			<a data-toggle="collapse" data-parent="#accordion" href="#q6">
+          				I´m not a UA student, can I still volunteer?
+        			</a>
+      			</h4>
+    		</div>
+    		<div id="q6" class="panel-collapse collapse">
+      			<div class="panel-body">
+    				<p>In most cases, yes. We accept non-UA students as volunteers on a case-by-case basis. You will need to talk to the board at a general meeting or by e-mail.</p>
+				</div>
+			</div>
+			<div class="panel-heading">
+      			<h4 class="panel-title">
+        			<a data-toggle="collapse" data-parent="#accordion" href="#q7">
+          				Who runs Camp Wildcat?
+        			</a>
+      			</h4>
+    		</div>
+    		<div id="q7" class="panel-collapse collapse">
+      			<div class="panel-body">
+    				<p>Camp Wildcat is an organization officially recognized by the <a href="http://www.arizona.edu"> University of Arizona</a>. We are entirely staffed, directed, and operated by student volunteers. The general membership elects a <a href="http://www.campwildcat.org/board/">Board of Directors</a> each year to serve as our decision-making body as well as our finance board. The board is advised by University of Arizona staff members. Camp Wildcat has no paid staff.</p>
+				</div>
+			</div>
+			<div class="panel-heading">
+      			<h4 class="panel-title">
+        			<a data-toggle="collapse" data-parent="#accordion" href="#q8">
+          				My child has been invited to Camp Wildcat. What is this all about?
+        			</a>
+      			</h4>
+    		</div>
+    		<div id="q8" class="panel-collapse collapse">
+      			<div class="panel-body">
+    				<p>You can find information for parents, kids, and teachers <a href="http://www.campwildcat.org/campers">on this page</a>.</p>
+				</div>
+			</div>
+			<div class="panel-heading">
+      			<h4 class="panel-title">
+        			<a data-toggle="collapse" data-parent="#accordion" href="#q9">
+          				How can I send my child to Camp Wildcat?
+        			</a>
+      			</h4>
+    		</div>
+    		<div id="q9" class="panel-collapse collapse">
+      			<div class="panel-body">
+      				<p>For each event, Camp Wildcat selects a school or group to work with based on need. We try to provide opportunities for fun activities that the kids we work with might not otherwise have. If you are aware of an organization which would benefit from camping or playing with Camp Wildcat for an hour, day or week, please drop a line to <a href="mailto:mail@campwildcat.org">mail@campwildcat.org</a>! We can not guarantee that we will be able to host an event for your group, but we will do our best.</p>
+				</div>
+			</div>
+			<div class="panel-heading">
+      			<h4 class="panel-title">
+        			<a data-toggle="collapse" data-parent="#accordion" href="#q10">
+          				How much do these events cost?
+        			</a>
+      			</h4>
+    		</div>
+    		<div id="q10" class="panel-collapse collapse">
+      			<div class="panel-body">
+      				<p>Camp Wildcat events are always provided at no cost to the children. Events involving kids are also free to our student volunteers. Socials may require volunteers to pay their own way. Funds to support Camp Wildcat come from fundraisers run by our volunteers, private donations, student government at the University of Arizona, and grant monies. In addition, generous business owners often donate goods and food for camps. Camp Wildcat is a non-profit organization with IRS 501(c)3 tax-exempt status. If you would like to donate to Camp Wildcat, drop us an e-mail or give us a call!</p>
+				</div>
+			</div>
+			<div class="panel-heading">
+      			<h4 class="panel-title">
+        			<a data-toggle="collapse" data-parent="#accordion" href="#q11">
+          				When did Camp Wildcat start?
+        			</a>
+      			</h4>
+    		</div>
+    		<div id="q11" class="panel-collapse collapse">
+      			<div class="panel-body">
+      				<p>Camp Wildcat was founded in 1965 and has a colorful <a href="http://www.campwildcat.org/history/">history</a>!</p> 
+				</div>
+			</div>
+			<div class="panel-heading">
+      			<h4 class="panel-title">
+        			<a data-toggle="collapse" data-parent="#accordion" href="#q12">
+          				How can I help Camp Wildcat?
+        			</a>
+      			</h4>
+    		</div>
+    		<div id="q12" class="panel-collapse collapse">
+      			<div class="panel-body">
+					<ul> 
+       		 			<li><i>Word of Mouth: </i> Tell everyone you know about Camp Wildcat!</li> 
+        				<li><i>Your Time: </i>CW is always seeking community leaders and generally interesting Tucsonans to be guest speakers at CW camps! If you are a student you can volunteer at our camps, day activities and fundraisers. Learn more at our general meetings, or if you are not a UA student, e-mail us or call if you want to help!</li> 
+        				<li><i>Donations: </i> Your tax free contributions will go straight to CW purpose of helping Tucson´s youth, with no "administrative fees." It costs around $50 for one child to go to camp for a weekend! Click <a href="#donate">here</a> for more information about tax-deductible donations to Camp Wildcat!</li> 
+     				 </ul>				
+      			</div>
+			</div>
+		</div>
+	</div>
+    
+    <!--div><a href="#q1">Who is in Camp Wildcat?</a></div>
     <div><a href="#q2">What does Camp Wildcat do?</a></div>
     <div><a href="#q3">How can I get involved in Camp Wildcat?</a></div>
     <div><a href="#q4">What is required to volunteer?</a></div>
@@ -302,7 +464,7 @@ Your donations are tax-deductible since Camp Wildcat is recognized as a tax-exem
         <li><i>Word of Mouth: </i> Tell everyone you know about Camp Wildcat!</li> 
         <li><i>Your Time: </i>CW is always seeking community leaders and generally interesting Tucsonans to be guest speakers at CW camps! If you are a student you can volunteer at our camps, day activities and fundraisers. Learn more at our general meetings, or if you are not a UA student, e-mail us or call if you want to help!</li> 
         <li><i>Donations: </i> Your tax free contributions will go straight to CW purpose of helping Tucson´s youth, with no "administrative fees." It costs around $50 for one child to go to camp for a weekend! Click <a href="#donate">here</a> for more information about tax-deductible donations to Camp Wildcat!</li> 
-      </ul>
+      </ul-->
       
       <h3>Still have questions?</h3>Please see <a href="#faq">Frequently Asked  Questions</a> or contact us at the email address or phone  number below.
       

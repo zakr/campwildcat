@@ -82,6 +82,10 @@ blockquote{
   overflow: hidden;
 }
 
+.panel-body{
+	background-color: #e6f8ff;
+}
+
 /* FOOTER */
 
 #footer {
