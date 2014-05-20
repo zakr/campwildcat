@@ -11,7 +11,7 @@
   <title>Camp Wildcat</title>
 </head>
 
-<body onload="javascript:window.scrollBy(0,0);">
+<body data-spy="scroll" data-target="#navbar-collapse-1">
   
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
@@ -29,6 +29,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
       <ul class="nav navbar-nav">
+      	<!-- hidden nav for the scrollspy -->
+      	<li class="hidden"><a href="#opening">Introduction</a></li>
         <li><a href="#visitors">What Is CW?</a></li>
         <li><a href="#campers">Going On Camp?</a></li>
         <li><a href="#donate">Donate</a></li>
