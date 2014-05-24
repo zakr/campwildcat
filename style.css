@@ -82,6 +82,16 @@ blockquote{
   overflow: hidden;
 }
 
+.panel{
+ 	border: 2px solid #A4ABCC !important;
+}
+
+.panel-heading{
+	background-color: #4D5C99 !important;
+	color: #A4ABCC !important;
+	border: 1px solid #A4ABCC !important;
+}
+
 .panel-body{
 	background-color: #e6f8ff;
 }
