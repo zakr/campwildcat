@@ -30,6 +30,11 @@ body{
 	background-color: #333D66;
 }
 
+.dropdown *{
+	background-color: #4D5C99 !important;
+	color: #A4ABCC !important;
+}
+
 /* Opening */
 
 #opening *{

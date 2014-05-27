@@ -2,10 +2,35 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
 <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css" />
-<script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+
+<!-- Hallo -->
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<script src="http://rangy.googlecode.com/svn/trunk/currentrelease/rangy-core.js"></script>
+<script src="http://hallojs.org/js/hallo.js"></script>
+
+<!--script>
+	//This would make everything on the page editable (but not persistant yet)
+	$( document ).ready(function() {
+		$('body *').hallo({
+			plugins: {
+				'halloformat': {},
+				'halloheadings': {},
+				'hallojustify': {},
+				'hallolists': {},
+				'halloreundo': {},
+				'hallolink': {},
+				'halloimage': {},
+				'halloblacklist': {}
+			}
+		});
+    });
+</script-->
+
   <meta charset="utf-8">
   
   <title>Camp Wildcat</title>
@@ -31,14 +56,21 @@
       <ul class="nav navbar-nav">
       	<!-- hidden nav for the scrollspy -->
       	<li class="hidden"><a href="#opening">Introduction</a></li>
-        <li><a href="#visitors">What Is CW?</a></li>
-        <li><a href="#campers">Going On Camp?</a></li>
+        <li><a href="#visitors">What's CW?</a></li>
+        <li><a href="#campers">Going On Camp</a></li>
         <li><a href="#donate">Donate</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#resources">Resources</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://campwildcat.org/members">Members</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Members <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://campwildcat.org/members">Current Members</a></li>
+            <li><a href="http://campwildcat.org/alumni/">Alumni</a></li>
+            <li><a href="http://campwildcat.org/fcw">Friends of CW</a></li>
+          </ul>
+        </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -56,8 +88,9 @@
       Camp Wildcat is a student-run, non-profit 501(c)(3) organization at the University of Arizona devoted to improving the lives of Tucson's youth. Over 100 dedicated volunteers provide cost-free activities for fun, friendship, and to portray college as an attainable goal for everyone!	
     </p>
 <!--     <button type="button" class="center btn btn-primary btn-lg">Donate!</button>
-     -->  </div>
-  
+     --> 
+  </div>
+    
   <img class="center image" src="http://www.campwildcat.org/images/header_bg.jpg" alt="">
 
       
